@@ -13,7 +13,7 @@ import {
 import { styled } from '@mui/system';
 import PersonIcon from '@mui/icons-material/Person';
 
-const GreenButton = styled(MuiButton)(({ theme }) => ({
+const GreenButton = styled(MuiButton)(({}) => ({
   color: 'white',
   '&:hover': {
     backgroundColor: 'rgba(255, 255, 255, 0.1)',
