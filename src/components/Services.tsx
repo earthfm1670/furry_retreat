@@ -36,7 +36,7 @@ const services = [
   },
 ];
 
-export default function Services() {
+export function Services() {
   return (
     <section id='services' className='bg-green-100 py-16'>
       <div className='container mx-auto px-6'>
