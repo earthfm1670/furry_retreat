@@ -10,14 +10,14 @@ import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import ContentCutIcon from '@mui/icons-material/ContentCut';
 import EventAvailableIcon from '@mui/icons-material/EventAvailable';
 
-interface NavbarItem {
+interface SideBarItem {
   id: number;
   label: string;
   url: string;
   icon: React.ReactNode;
 }
 
-const navbarItemList: NavbarItem[] = [
+const navbarItemList: SideBarItem[] = [
   { id: 1, label: 'Profile', url: ROUTES.USER_DASHBOARD, icon: <PersonIcon /> },
   {
     id: 2,
@@ -45,14 +45,12 @@ const navbarItemList: NavbarItem[] = [
   },
 ];
 
-export const Navbar = () => {
+export const Sidebar = () => {
   const pathName = usePathname();
 
   return (
-    <div className='h-full w-full px-2'>
-      {/* <Toolbar />
-      <Divider /> */}
-      <List className=''>
+    <div className='h-full w-[300px] border-r px-2'>
+      <List className='mt-16'>
         {navbarItemList.map((item) => (
           <ListItem
             className={

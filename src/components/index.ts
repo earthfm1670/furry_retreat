@@ -3,5 +3,4 @@ export interface SVGIconProps extends React.SVGProps<SVGSVGElement> {
 }
 
 export * from './test-icon';
-export * from './navbar';
-export * from './dashboard-layout';
+export * from './Sidebar';
